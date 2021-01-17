@@ -1,0 +1,31 @@
+{
+  "name": "nodejs_boilerplate",
+  "version": "1.0.0",
+  "description": "Prepared boilerplate project for getting started with new Node app.",
+  "main": "src/main.js",
+  "repository": "https://github.com/ruxxzebre/nodejs_boilerplate",
+  "author": "ruxxzebre",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/main.js",
+    "dev": "nodemon --exec \"npm run pretest && babel-node src/main.js\"",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "lint": "eslint",
+    "test": "yarn jest"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "yarn": "^1.22.10"
+  }
+}
